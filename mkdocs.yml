@@ -1,0 +1,60 @@
+site_name: Claude Cowork Troubleshooting Guide
+site_url: https://archiecur.github.io/troubleshooting_Cowork/
+repo_url: https://github.com/ArchieCur/troubleshooting_Cowork
+repo_name: ArchieCur/troubleshooting_Cowork
+copyright: ArchieCur · Open source
+
+theme:
+  name: material
+  palette:
+    primary: deep orange
+    accent: orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.share
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Is Your Computer Ready?: is_your_computer_ready_for_claude_cowork.md
+  - Getting Set Up:
+    - Windows:
+      - Error Hub: getting_set_up_Windows/windows-checker-errors.md
+      - "Fix: Access Denied": getting_set_up_Windows/fix-access-denied.md
+      - "Fix: Hypervisor Not Running": getting_set_up_Windows/fix-hypervisor-not-running.md
+      - "Fix: Virtual Machine Platform": getting_set_up_Windows/fix-virtual-machine-platform.md
+      - "Fix: WDAC Policy": getting_set_up_Windows/fix-wdac-policy.md
+      - IT Email Templates: getting_set_up_Windows/windows-it-email-templates.md
+    - macOS:
+      - Error Hub: getting_set_up_macOS/macos-checker-errors.md
+      - Universal Requirements: getting_set_up_macOS/macos-universal-requirements.md
+      - Personal Mac Fixes: getting_set_up_macOS/macos-personal-mac-fixes.md
+      - Managed Mac (IT): getting_set_up_macOS/macos-managed-mac-it.md
+  - After Set Up — Windows:
+    - "Tier 1 — Networking & Plugins": windows_Cowork_after_set_up/windows-networking-errors.md
+    - "Tier 2 — Scheduled Tasks": windows_Cowork_after_set_up/windows-scheduled-tasks.md
+    - "Tier 3 — Connectors & Add-ins": windows_Cowork_after_set_up/windows-connectors-addins.md
+    - "Tier 4 — Known Issues": windows_Cowork_after_set_up/windows-known-issues.md
+  - After Set Up — macOS:
+    - "Tier 1 — Networking & Plugins": macOS_Cowork_after_set_up/macos-networking-errors.md
+    - "Tier 2 — Scheduled Tasks": macOS_Cowork_after_set_up/macos-scheduled-tasks.md
+    - "Tier 3 — Connectors & Add-ins": macOS_Cowork_after_set_up/macos-connectors-addins.md
+    - "Tier 4 — Known Issues": macOS_Cowork_after_set_up/macos-known-issues.md
+  - Support:
+    - How to Contact Anthropic: support/getting-support.md
+    - IT Email Templates: support/IT_support_email.md
+    - Information to Gather: support/support-info-to-gather.md
