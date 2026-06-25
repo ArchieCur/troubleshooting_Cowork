@@ -1,0 +1,2287 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://archiecur.github.io/troubleshooting_Cowork/macOS_Cowork_after_set_up/macos-connectors-addins/">
+      
+      
+        <link rel="prev" href="../macos-scheduled-tasks/">
+      
+      
+        <link rel="next" href="../macos-known-issues/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Tier 3 — Connectors & Add-ins - Claude Cowork Troubleshooting Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fix-connectors-plugins-and-office-add-ins-macos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Claude Cowork Troubleshooting Guide" class="md-header__button md-logo" aria-label="Claude Cowork Troubleshooting Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Claude Cowork Troubleshooting Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tier 3 — Connectors & Add-ins
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ArchieCur/troubleshooting_Cowork" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ArchieCur/troubleshooting_Cowork
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../is_your_computer_ready_for_claude_cowork/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Is Your Computer Ready?
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting_set_up_Windows/windows-checker-errors/" class="md-tabs__link">
+          
+  
+  
+  Getting Set Up
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../windows_Cowork_after_set_up/windows-networking-errors/" class="md-tabs__link">
+          
+  
+  
+  After Set Up — Windows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../macos-networking-errors/" class="md-tabs__link">
+          
+  
+  
+  After Set Up — macOS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../support/getting-support/" class="md-tabs__link">
+          
+  
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Claude Cowork Troubleshooting Guide" class="md-nav__button md-logo" aria-label="Claude Cowork Troubleshooting Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Claude Cowork Troubleshooting Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ArchieCur/troubleshooting_Cowork" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ArchieCur/troubleshooting_Cowork
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../is_your_computer_ready_for_claude_cowork/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Is Your Computer Ready?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Set Up
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Set Up
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Windows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/windows-checker-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Error Hub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/fix-access-denied/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fix: Access Denied
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/fix-hypervisor-not-running/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fix: Hypervisor Not Running
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/fix-virtual-machine-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fix: Virtual Machine Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/fix-wdac-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fix: WDAC Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/windows-it-email-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Email Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    macOS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    macOS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_macOS/macos-checker-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Error Hub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_macOS/macos-universal-requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Universal Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_macOS/macos-personal-mac-fixes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personal Mac Fixes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_macOS/macos-managed-mac-it/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Managed Mac (IT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    After Set Up — Windows
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    After Set Up — Windows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows_Cowork_after_set_up/windows-networking-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 1 — Networking & Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows_Cowork_after_set_up/windows-scheduled-tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 2 — Scheduled Tasks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows_Cowork_after_set_up/windows-connectors-addins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 3 — Connectors & Add-ins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../windows_Cowork_after_set_up/windows-known-issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 4 — Known Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    After Set Up — macOS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    After Set Up — macOS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macos-networking-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 1 — Networking & Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macos-scheduled-tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 2 — Scheduled Tasks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 3 — Connectors & Add-ins
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 3 — Connectors & Add-ins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#which-error-are-you-seeing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which error are you seeing?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Which error are you seeing?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#could-not-connect-to-mcp-server-mcp-registry-or-could-not-load-connectors-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 "Could not connect to MCP server mcp-registry" or "Could not load connectors directory"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-mcp-connector-silently-fails-to-connect-or-forgets-your-login-after-every-restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Custom MCP connector silently fails to connect — or forgets your login after every restart
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugins-disappear-from-the-cowork-tab-every-time-you-restart-the-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Plugins disappear from the Cowork tab every time you restart the app
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel-or-powerpoint-add-in-disappeared-or-shows-an-error-when-clicked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Excel or PowerPoint add-in disappeared — or shows an error when clicked
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-1-mcp-registry-out-of-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix 1 — MCP Registry Out of Sync
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fix 1 — MCP Registry Out of Sync">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-this-your-personal-mac-or-a-work-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is this your personal Mac or a work Mac?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is this your personal Mac or a work Mac?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Personal Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-mac-managed-by-your-employer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Work Mac (managed by your employer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-2-custom-mcp-connector-wont-authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix 2 — Custom MCP Connector Won't Authenticate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fix 2 — Custom MCP Connector Won&#39;t Authenticate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-this-your-personal-mac-or-a-work-mac_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is this your personal Mac or a work Mac?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is this your personal Mac or a work Mac?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-mac_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Personal Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-mac-managed-by-your-employer_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Work Mac (managed by your employer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-3-plugins-disappear-after-restarting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix 3 — Plugins Disappear After Restarting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fix 3 — Plugins Disappear After Restarting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-this-your-personal-mac-or-a-work-mac_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is this your personal Mac or a work Mac?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is this your personal Mac or a work Mac?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-mac_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Personal Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-mac-managed-by-your-employer_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Work Mac (managed by your employer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-4-office-add-in-disappears-after-cowork-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix 4 — Office Add-in Disappears After Cowork Session
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fix 4 — Office Add-in Disappears After Cowork Session">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-this-your-personal-mac-or-a-work-mac_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is this your personal Mac or a work Mac?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is this your personal Mac or a work Mac?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-mac_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Personal Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-mac-managed-by-your-employer_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Work Mac (managed by your employer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macos-known-issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 4 — Known Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/getting-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to Contact Anthropic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/IT_support_email/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IT Email Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/support-info-to-gather/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Information to Gather
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#which-error-are-you-seeing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which error are you seeing?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Which error are you seeing?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#could-not-connect-to-mcp-server-mcp-registry-or-could-not-load-connectors-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 "Could not connect to MCP server mcp-registry" or "Could not load connectors directory"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-mcp-connector-silently-fails-to-connect-or-forgets-your-login-after-every-restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Custom MCP connector silently fails to connect — or forgets your login after every restart
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugins-disappear-from-the-cowork-tab-every-time-you-restart-the-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Plugins disappear from the Cowork tab every time you restart the app
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excel-or-powerpoint-add-in-disappeared-or-shows-an-error-when-clicked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 Excel or PowerPoint add-in disappeared — or shows an error when clicked
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-1-mcp-registry-out-of-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix 1 — MCP Registry Out of Sync
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fix 1 — MCP Registry Out of Sync">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-this-your-personal-mac-or-a-work-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is this your personal Mac or a work Mac?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is this your personal Mac or a work Mac?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Personal Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-mac-managed-by-your-employer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Work Mac (managed by your employer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-2-custom-mcp-connector-wont-authenticate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix 2 — Custom MCP Connector Won't Authenticate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fix 2 — Custom MCP Connector Won&#39;t Authenticate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-this-your-personal-mac-or-a-work-mac_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is this your personal Mac or a work Mac?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is this your personal Mac or a work Mac?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-mac_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Personal Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-mac-managed-by-your-employer_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Work Mac (managed by your employer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-3-plugins-disappear-after-restarting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix 3 — Plugins Disappear After Restarting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fix 3 — Plugins Disappear After Restarting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-this-your-personal-mac-or-a-work-mac_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is this your personal Mac or a work Mac?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is this your personal Mac or a work Mac?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-mac_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Personal Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-mac-managed-by-your-employer_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Work Mac (managed by your employer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-4-office-add-in-disappears-after-cowork-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix 4 — Office Add-in Disappears After Cowork Session
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fix 4 — Office Add-in Disappears After Cowork Session">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-this-your-personal-mac-or-a-work-mac_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is this your personal Mac or a work Mac?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is this your personal Mac or a work Mac?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-mac_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Personal Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-mac-managed-by-your-employer_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Work Mac (managed by your employer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="fix-connectors-plugins-and-office-add-ins-macos">Fix: Connectors, Plugins, and Office Add-ins — macOS</h1>
+<p>You launched a Cowork session on your Mac, but your connected tools are missing, the MCP registry throws a red error banner, your custom connectors refuse to authenticate, or your Microsoft 365 add-ins have disappeared. Because Claude Desktop updates automatically in the background, the internal tool registry can fall out of sync with your workspace. Additionally, macOS caching bugs can cause Cowork to silently forget your OAuth logins or drop plugins when you restart the application.</p>
+<p>Find your error below.</p>
+<hr />
+<h2 id="which-error-are-you-seeing">Which error are you seeing?</h2>
+<h3 id="could-not-connect-to-mcp-server-mcp-registry-or-could-not-load-connectors-directory">🔴 "Could not connect to MCP server mcp-registry" or "Could not load connectors directory"</h3>
+<p>A background update caused the internal tool registry to lose sync with your workspace.</p>
+<p>👉 <a href="#fix-1-mcp-registry-out-of-sync">Jump to Fix 1</a></p>
+<hr />
+<h3 id="custom-mcp-connector-silently-fails-to-connect-or-forgets-your-login-after-every-restart">🔴 Custom MCP connector silently fails to connect — or forgets your login after every restart</h3>
+<p>A caching bug in the <code>~/.claude</code> directory is preventing OAuth tokens from persisting.</p>
+<p>👉 <a href="#fix-2-custom-mcp-connector-wont-authenticate">Jump to Fix 2</a></p>
+<hr />
+<h3 id="plugins-disappear-from-the-cowork-tab-every-time-you-restart-the-app">🔴 Plugins disappear from the Cowork tab every time you restart the app</h3>
+<p>Plugins installed through the visual marketplace are not persisting between app restarts.</p>
+<p>👉 <a href="#fix-3-plugins-disappear-after-restarting">Jump to Fix 3</a></p>
+<hr />
+<h3 id="excel-or-powerpoint-add-in-disappeared-or-shows-an-error-when-clicked">🔴 Excel or PowerPoint add-in disappeared — or shows an error when clicked</h3>
+<p>A known Cowork bug is removing or corrupting Microsoft 365 add-ins after each session.</p>
+<p>👉 <a href="#fix-4-office-add-in-disappears-after-cowork-session">Jump to Fix 4</a></p>
+<hr />
+<h2 id="fix-1-mcp-registry-out-of-sync">Fix 1 — MCP Registry Out of Sync</h2>
+<p><strong>Error:</strong> <code>"Could not connect to MCP server mcp-registry"</code> or <code>"Could not load connectors directory"</code></p>
+<p>A background auto-update to Claude Desktop caused the internal tool registry to fall out of sync with your workspace. All of your MCP tools become invisible to Cowork — even though they are still installed and functioning.</p>
+<div class="admonition warning">
+<p class="admonition-title">Do not use rm -rf to delete the vm_bundles folder</p>
+<p>Some online sources suggest running <code>rm -rf</code> on the <code>vm_bundles</code> folder to fix this issue. <strong>Do not do this.</strong> That folder contains your active Cowork workspace state, including ongoing terminal sessions, uncommitted tasks, and local plugin data. Deleting it causes immediate and permanent loss of that data. The steps below rename the folders as backups instead, which is safe and reversible.</p>
+</div>
+<hr />
+<h3 id="is-this-your-personal-mac-or-a-work-mac">Is this your personal Mac or a work Mac?</h3>
+<h4 id="personal-mac">🏠 Personal Mac</h4>
+<p><strong>Step 1 — Quit Claude Desktop</strong></p>
+<p>Press <strong>Command + Q</strong> while Claude is the active app to quit it fully.</p>
+<p><strong>Step 2 — Open Terminal</strong></p>
+<p>Press <strong>Command + Space</strong>, type <code>Terminal</code>, and press <strong>Enter</strong>.</p>
+<p><strong>Step 3 — Rename the out-of-sync registry folders</strong></p>
+<p>Run both commands as written. This renames the folders to backup copies rather than deleting them.</p>
+<div class="highlight"><pre><span></span><code>mv<span class="w"> </span>~/Library/Application<span class="se">\ </span>Support/Claude/vm_bundles<span class="w"> </span>~/Library/Application<span class="se">\ </span>Support/Claude/vm_bundles.bak
+mv<span class="w"> </span>~/Library/Application<span class="se">\ </span>Support/Claude/claude-code-vm<span class="w"> </span>~/Library/Application<span class="se">\ </span>Support/Claude/claude-code-vm.bak
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">If you see a 'cannot move' error</p>
+<p>A backup from a previous run of this fix may already exist. Run the following to remove the old backups first, then repeat the commands above:
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>-rf<span class="w"> </span>~/Library/Application<span class="se">\ </span>Support/Claude/vm_bundles.bak
+rm<span class="w"> </span>-rf<span class="w"> </span>~/Library/Application<span class="se">\ </span>Support/Claude/claude-code-vm.bak
+</code></pre></div></p>
+</div>
+<p><strong>Step 4 — Relaunch Claude Desktop</strong></p>
+<p>Claude Desktop will detect the missing folders and provision a fresh workspace, then reconnect to the MCP registry.</p>
+<p>✅ <strong>MCP tools back? You're done.</strong></p>
+<p>❌ <strong>Registry banner gone but tools still won't authenticate?</strong></p>
+<p>This may be a known Anthropic server-side issue. Contact Anthropic support.</p>
+<p>👉 <a href="../../support/getting-support/">How to contact Anthropic support</a></p>
+<hr />
+<h4 id="work-mac-managed-by-your-employer">🏢 Work Mac (managed by your employer)</h4>
+<p>The Terminal steps above apply to work Macs. However, if your employer's security software restricts access to your Library folder, the <code>mv</code> commands may return a permissions error. Contact your IT department if that happens.</p>
+<div class="admonition note">
+<p class="admonition-title">For IT departments</p>
+<p>Claude Cowork's MCP tool registry is stored in two folders:
+- <code>~/Library/Application Support/Claude/vm_bundles</code>
+- <code>~/Library/Application Support/Claude/claude-code-vm</code></p>
+<p>Renaming both folders (not deleting) and relaunching Claude Desktop forces a clean registry rebuild. If MDM or endpoint security software restricts writes to <code>~/Library/Application Support/</code>, a temporary exception for these paths is needed.</p>
+</div>
+<p>👉 <a href="../../support/IT_support_email/">IT email template: Connectors &amp; Add-ins</a></p>
+<hr />
+<h2 id="fix-2-custom-mcp-connector-wont-authenticate">Fix 2 — Custom MCP Connector Won't Authenticate</h2>
+<p><strong>Symptom:</strong> A custom MCP connector's <strong>Connect</strong> button silently fails when clicked, or the connector loses its login every time Claude Desktop restarts.</p>
+<p>A caching bug prevents custom MCP connector OAuth tokens from persisting across app restarts. The local cache file (<code>mcp-needs-auth-cache.json</code>) does not properly track authentication state for custom (non-Anthropic-managed) connectors.</p>
+<hr />
+<h3 id="is-this-your-personal-mac-or-a-work-mac_1">Is this your personal Mac or a work Mac?</h3>
+<h4 id="personal-mac_1">🏠 Personal Mac</h4>
+<p><strong>Step 1 — Quit Claude Desktop</strong></p>
+<p>Press <strong>Command + Q</strong> while Claude is the active app.</p>
+<p><strong>Step 2 — Open Terminal</strong></p>
+<p>Press <strong>Command + Space</strong>, type <code>Terminal</code>, and press <strong>Enter</strong>.</p>
+<p><strong>Step 3 — Clear the corrupted authentication cache</strong></p>
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>~/.claude/mcp-needs-auth-cache.json
+</code></pre></div>
+<p>This file is automatically recreated when Claude Desktop relaunches — deleting it is safe.</p>
+<p><strong>Step 4 — Relaunch Claude Desktop and authenticate again</strong></p>
+<p>Open Claude Desktop and try connecting the MCP connector again.</p>
+<p>✅ <strong>Connector authenticating? You're done.</strong></p>
+<p>❌ <strong>Connector still failing?</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">For more confident Mac users</p>
+<p>If clearing the cache did not help, the OAuth entry for your connector may need to be removed manually from a hidden credentials file. This involves opening a JSON file and deleting a specific entry. Only attempt this if you are comfortable editing plain-text files — an incorrectly edited file will break all saved credentials.</p>
+<ol>
+<li>In Terminal, open the credentials file in your default text editor:
+   <div class="highlight"><pre><span></span><code>open<span class="w"> </span>-e<span class="w"> </span>~/.claude/.credentials.json
+</code></pre></div></li>
+<li>Find the <code>mcpOAuth</code> section and delete only the entry for the broken connector</li>
+<li>Save the file and close the editor</li>
+<li>Relaunch Claude Desktop and authenticate the connector again</li>
+</ol>
+</div>
+<p>If editing the credentials file does not resolve it, or if you are not comfortable doing so, contact Anthropic support.</p>
+<p>👉 <a href="../../support/getting-support/">How to contact Anthropic support</a></p>
+<hr />
+<h4 id="work-mac-managed-by-your-employer_1">🏢 Work Mac (managed by your employer)</h4>
+<p>Custom MCP connector authentication issues on managed Macs may also be caused by MDM-enforced network policies blocking the OAuth callback URL. If the connector's authorization page opens in a browser but the authentication never completes, your corporate firewall or proxy may be intercepting the OAuth redirect.</p>
+<p>Contact your IT department and ask them to allow OAuth callback traffic for the connector's registered redirect URI.</p>
+<p>👉 <a href="../../support/IT_support_email/">IT email template: Connectors &amp; Add-ins</a></p>
+<hr />
+<h2 id="fix-3-plugins-disappear-after-restarting">Fix 3 — Plugins Disappear After Restarting</h2>
+<p><strong>Symptom:</strong> Plugins you installed through the Cowork marketplace tab are gone the next time you open Claude Desktop.</p>
+<div class="admonition warning">
+<p class="admonition-title">This is a known sync bug</p>
+<p>Cowork's visual plugin marketplace and the underlying Claude Code command-line tool maintain separate, unsynchronized installation states. Plugins installed through the visual "Personal" marketplace tab are currently not persisted between app restarts.</p>
+</div>
+<p>There is no permanent fix for this yet. Two workarounds are available.</p>
+<hr />
+<h3 id="is-this-your-personal-mac-or-a-work-mac_2">Is this your personal Mac or a work Mac?</h3>
+<h4 id="personal-mac_2">🏠 Personal Mac</h4>
+<p><strong>Workaround 1 — Reinstall from the marketplace tab each session</strong></p>
+<p>Each time you open Claude Desktop, go to the Cowork marketplace tab and reinstall the plugins you need. This takes seconds but must be repeated every session.</p>
+<p><strong>Workaround 2 — Use a personal marketplace with ZIP upload</strong></p>
+<p>A more durable option: create your own personal marketplace and upload your plugins as <code>.zip</code> files through the admin UI. Plugins added this way are not subject to the restart sync bug.</p>
+<p>This is a documented Anthropic feature — see the <a href="https://www.anthropic.com/engineering/desktop-extensions">Claude Desktop Extensions guide</a> for how to set up a personal marketplace and use the manual upload option.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The ZIP upload approach requires initial setup time but eliminates the need to reinstall after every restart. It is the recommended path if you rely on specific plugins regularly.</p>
+</div>
+<p>✅ <strong>Plugins staying put? You're done.</strong></p>
+<p>❌ <strong>Still disappearing?</strong></p>
+<p>👉 <a href="../../support/getting-support/">How to contact Anthropic support</a></p>
+<hr />
+<h4 id="work-mac-managed-by-your-employer_2">🏢 Work Mac (managed by your employer)</h4>
+<p>If your organization manages Claude Desktop centrally, individual plugin installation may be restricted. Contact your Anthropic account administrator to ask whether plugins can be deployed to your workspace from the organizational marketplace.</p>
+<p>👉 <a href="../../support/IT_support_email/">IT email template: Connectors &amp; Add-ins</a></p>
+<hr />
+<h2 id="fix-4-office-add-in-disappears-after-cowork-session">Fix 4 — Office Add-in Disappears After Cowork Session</h2>
+<p><strong>Symptoms — any of these may appear after a Cowork session ends:</strong></p>
+<ul>
+<li>The Claude add-in has disappeared from the PowerPoint ribbon entirely</li>
+<li>The Claude add-in is visible in Excel but clicking it produces an error or does nothing</li>
+<li>An error says <code>"Microsoft 365 has been configured to prevent individual acquisition"</code></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">This is a confirmed, reproducible Cowork bug</p>
+<p>Cowork's macOS virtualization layer interferes with Microsoft Office Web Add-in registration. After a Cowork session closes, it removes the Claude add-in manifest from PowerPoint and corrupts the execution context for Excel's add-in. This happens on every session and affects any new Office file, not just files Cowork touched.</p>
+<p><strong>There is no permanent local fix.</strong> The add-ins must be re-enabled after each Cowork session until Anthropic resolves this at the application level.</p>
+<p><strong>What does not fix this:</strong> Reinstalling Office, reinstalling Claude Desktop, using a different Microsoft 365 account, or creating a new macOS user profile.</p>
+</div>
+<hr />
+<h3 id="is-this-your-personal-mac-or-a-work-mac_3">Is this your personal Mac or a work Mac?</h3>
+<h4 id="personal-mac_3">🏠 Personal Mac</h4>
+<p>Work through these steps in order. Stop as soon as the add-in is working again.</p>
+<p><strong>Step 1 — Sign out and back in to Microsoft Office</strong></p>
+<p>Open Excel or PowerPoint → click your profile picture or name in the top-right corner → <strong>Sign out</strong>. Then sign back in. This sometimes resolves manifest errors without any further steps.</p>
+<p><strong>Step 2 — Clear the Office Web Add-in host cache</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">For more confident Mac users</p>
+<p>This step involves deleting files from hidden system folders. If you are not comfortable doing this, skip to Step 3.</p>
+<p>Open Terminal and run:
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>-rf<span class="w"> </span>~/Library/Containers/com.Microsoft.OsfWebHost/Data/*
+</code></pre></div>
+Then fully quit and relaunch Excel or PowerPoint.</p>
+</div>
+<p><strong>Step 3 — Reinstall the add-in from Get Add-ins</strong></p>
+<ol>
+<li>Open Excel or PowerPoint</li>
+<li>Go to <strong>Insert</strong> → <strong>Get Add-ins</strong></li>
+<li>Search for <strong>Claude</strong> and reinstall or re-enable it</li>
+<li>Sign in when prompted</li>
+</ol>
+<p>This step must be repeated after each Cowork session.</p>
+<p><strong>Step 4 — Use Office Online as a working alternative</strong></p>
+<p>Excel Online and PowerPoint Online at <a href="https://office.com">office.com</a> are not affected by this bug. If you need the Claude add-in while using Cowork, the browser-based Office apps work reliably and require no reinstallation.</p>
+<p>✅ <strong>Add-in working again? You're done — but expect to repeat Step 3 after each session.</strong></p>
+<p>❌ <strong>Seeing a "Schema validation", "Redirect-URI", or "Extra inputs" error when signing in to the add-in?</strong></p>
+<p>These are server-side API errors that cannot be fixed locally. See the known issues page for a full explanation and your options.</p>
+<p>👉 <a href="../macos-known-issues/">Known server bugs and OS limits — macOS</a></p>
+<hr />
+<h4 id="work-mac-managed-by-your-employer_3">🏢 Work Mac (managed by your employer)</h4>
+<p>If your organization controls Microsoft 365 add-in deployment, you will not be able to reinstall the Claude add-in yourself using Get Add-ins. Your IT department or Microsoft 365 administrator needs to re-deploy the add-in from the Microsoft 365 Admin Center.</p>
+<div class="admonition note">
+<p class="admonition-title">For IT departments</p>
+<p>This is a confirmed bug in Claude Cowork on macOS. After each Cowork session, the Claude Web Add-in manifest for PowerPoint is removed and the Excel add-in's execution context is corrupted. The only confirmed workaround is to re-deploy the Claude add-in from the Microsoft 365 Admin Center after each affected session. Microsoft moderators also recommend clearing <code>~/Library/Containers/com.Microsoft.OsfWebHost/Data/</code> on the affected device as a supplementary step. This is being tracked as an Anthropic engineering issue.</p>
+<p><strong>Office Online (office.com) is not affected</strong> and can be used in the meantime.</p>
+</div>
+<p>👉 <a href="../../support/IT_support_email/">IT email template: Connectors &amp; Add-ins</a></p>
+<hr />
+<p><em>ArchieCur created in collaboration with Claude Code (Anthropic) and Gemini 3.1 Pro (Google) · v1.0.0 · June 2026</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      ArchieCur · Open source
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

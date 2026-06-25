@@ -1,0 +1,22 @@
+/* Navigation tabs styled to match the search box —
+   each tab gets the same dark overlay background so they read as
+   distinct clickable elements against the orange header */
+.md-tabs__link {
+  color: #ffffff !important;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 4px;
+  padding: 2px 10px !important;
+  margin: 0 2px;
+}
+
+.md-tabs__link:hover {
+  color: #ffffff !important;
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.md-tabs__link--active {
+  color: #ffffff !important;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.38);
+}
