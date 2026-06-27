@@ -38,6 +38,7 @@ Cowork requires these **exact service accounts** to start correctly:
 
 - NT SERVICE\vmcompute  
 - NT SERVICE\hns
+
 Those two are the ones Windows uses to run the virtual machine and its networking layer.
 If you see only ALL SERVICES, it means the policy was set too broadly.
 You’ll need to add the two specific accounts manually.  
