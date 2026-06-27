@@ -58,7 +58,7 @@ You’ll need to add the two specific accounts manually.
 - **Repeat for hns.**
 - **Click OK** to close each dialog, then **Apply** to save the policy.
 
-**3. – Restart** 
+**3. Restart** 
 - **Restart your computer** (this matters—policy changes don’t always apply immediately).
 
 **If you see a “Select Users or Groups (Advanced)” dialog during setup, it means Windows cannot access the virtualization components.  
