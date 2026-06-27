@@ -44,6 +44,7 @@ If you see only ALL SERVICES, it means the policy was set too broadly.
 You’ll need to add the two specific accounts manually.  
 
 **If both are listed:** this fix doesn’t apply— go back and follow the “Hypervisor not running” path. 
+
 **If one or both are missing:** continue to Step 2.
 
 **2. Adding the missing `NT SERVICE\vmcompute` and or `NT SERVICE\hns`**  
