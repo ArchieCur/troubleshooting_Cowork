@@ -656,6 +656,23 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-youre-not-comfortable-making-changes-here-consider-reaching-out-to-a-trusted-technical-contact-for-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If you're not comfortable making changes here, consider reaching out to a trusted technical contact for help.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="If you&#39;re not comfortable making changes here, consider reaching out to a trusted technical contact for help.">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#work-computer-managed-by-an-employer" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1528,6 +1545,23 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-youre-not-comfortable-making-changes-here-consider-reaching-out-to-a-trusted-technical-contact-for-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If you're not comfortable making changes here, consider reaching out to a trusted technical contact for help.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="If you&#39;re not comfortable making changes here, consider reaching out to a trusted technical contact for help.">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#work-computer-managed-by-an-employer" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1600,7 +1634,34 @@
 <li>Look for <strong>Log on as a service</strong></li>
 <li>Confirm that the relevant VM service accounts are listed</li>
 </ul>
-<p>If you're not comfortable making changes here, consider reaching out to a trusted technical contact for help.</p>
+<p>Cowork requires these <strong>exact service accounts</strong> to start correctly:  </p>
+<ul>
+<li>NT SERVICE\vmcompute  </li>
+<li>NT SERVICE\hns</li>
+</ul>
+<p>Those two are the ones Windows uses to run the virtual machine and its networking layer.
+If you see only ALL SERVICES, it means the policy was set too broadly.
+You’ll need to add the two specific accounts manually.  </p>
+<p><strong>If both are listed:</strong> this fix doesn’t apply— go back and follow the “Hypervisor not running” path. </p>
+<p><strong>If one or both are missing:</strong> continue to Step 2.</p>
+<p><strong>2. Adding the missing <code>NT SERVICE\vmcompute</code> and or <code>NT SERVICE\hns</code></strong><br />
+- In the Log on as a service window, <strong>click</strong> Add User or Group…
+- <strong>Click</strong> Advanced….
+- <strong>Click</strong> Find Now.
+- In the search results list, scroll until you find:
+    <strong>vmcompute</strong>
+    <strong>hns</strong>
+- <strong>Double click</strong> vmcompute to add it.
+- <strong>Repeat for hns.</strong>
+- <strong>Click OK</strong> to close each dialog, then <strong>Apply</strong> to save the policy.</p>
+<p><strong>3. Restart</strong> 
+- <strong>Restart your computer</strong> (this matters—policy changes don’t always apply immediately).</p>
+<p><strong>If you see a “Select Users or Groups (Advanced)” dialog during setup, it means Windows cannot access the virtualization components.<br />
+This happens when Virtual Machine Platform is not installed or when the device is restricted by employer security policies. 
+Personal computers should not show this dialog.</strong>  </p>
+<p>❌ <strong>Seeing “Select Users or Groups (Advanced)”?</strong>  </p>
+<p>You will need to Go to <strong>Fix: Virtual Machine Platform is Turned Off</strong> </p>
+<h2 id="if-youre-not-comfortable-making-changes-here-consider-reaching-out-to-a-trusted-technical-contact-for-help">If you're not comfortable making changes here, consider reaching out to a trusted technical contact for help.</h2>
 <h3 id="work-computer-managed-by-an-employer">🏢 Work computer (managed by an employer)</h3>
 <p>This is the most common scenario for this warning. Your IT department controls which services are allowed to log on, and Cowork's virtualization services have been blocked by that policy.</p>
 <p>This is not something you can fix yourself — your IT department needs to grant the appropriate logon rights.</p>
