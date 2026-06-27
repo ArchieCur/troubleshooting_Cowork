@@ -36,10 +36,11 @@ The restriction may be set at a deeper level. If you're comfortable with Windows
 
 Cowork requires these **exact service accounts** to start correctly:  
 
-•	NT SERVICE\vmcompute  
-•	NT SERVICE\hns
-Those two are the ones Windows uses to run the virtual machine and its networking layer. If you see only ALL SERVICES,  
-it means the policy was set too broadly — you’ll need to add the two specific accounts manually.  
+- NT SERVICE\vmcompute  
+- NT SERVICE\hns
+Those two are the ones Windows uses to run the virtual machine and its networking layer.
+If you see only ALL SERVICES, it means the policy was set too broadly.
+You’ll need to add the two specific accounts manually.  
 
 **If both are listed:** this fix doesn’t apply— go back and follow the “Hypervisor not running” path. 
 **If one or both are missing:** continue to Step 2.
