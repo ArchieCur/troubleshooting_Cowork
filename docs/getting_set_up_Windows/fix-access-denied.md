@@ -34,7 +34,39 @@ The restriction may be set at a deeper level. If you're comfortable with Windows
 - Look for **Log on as a service**
 - Confirm that the relevant VM service accounts are listed
 
-If you're not comfortable making changes here, consider reaching out to a trusted technical contact for help.
+Cowork requires these **exact service accounts** to start correctly:  
+•	NT SERVICE\vmcompute
+•	NT SERVICE\hns
+Those two are the ones Windows uses to run the virtual machine and its networking layer. If you see only ALL SERVICES,  
+it means the policy was set too broadly — you’ll need to add the two specific accounts manually.  
+
+**If both are listed:** this fix doesn’t apply— go back and follow the “Hypervisor not running” path. 
+**If one or both are missing:** continue to Step 2.
+
+**2. Adding the missing `NT SERVICE\vmcompute` and or `NT SERVICE\hns`**  
+- In the Log on as a service window, **click** Add User or Group…
+- **Click** Advanced….
+- **Click** Find Now.
+- In the search results list, scroll until you find:
+    **vmcompute**
+    **hns**
+- **Double click** vmcompute to add it.
+- **Repeat for hns.**
+- **Click OK** to close each dialog, then **Apply** to save the policy.
+
+**3. – Restart** 
+- **Restart your computer** (this matters—policy changes don’t always apply immediately).
+
+**If you see a “Select Users or Groups (Advanced)” dialog during setup, it means Windows cannot access the virtualization components.  
+This happens when Virtual Machine Platform is not installed or when the device is restricted by employer security policies. 
+Personal computers should not show this dialog.**  
+
+❌ **Seeing “Select Users or Groups (Advanced)”?**  
+
+You will need to Go to **Fix: Virtual Machine Platform is Turned Off** 
+
+If you're not comfortable making changes here, consider reaching out to a trusted technical contact for help.  
+---
 
 ### 🏢 Work computer (managed by an employer)
 
