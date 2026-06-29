@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://archiecur.github.io/troubleshooting_Cowork/windows_Cowork_after_set_up/windows-networking-errors/">
       
       
-        <link rel="prev" href="../../getting_set_up_macOS/macos-managed-mac-it/">
+        <link rel="prev" href="../new-to-powershell/">
       
       
         <link rel="next" href="../windows-scheduled-tasks/">
@@ -272,7 +272,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../windows-quick-fixes/" class="md-tabs__link">
           
   
   
@@ -590,6 +590,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/pictorial-access-denied/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Guide: Access Denied
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_set_up_Windows/fix-hypervisor-not-running/" class="md-nav__link">
         
   
@@ -598,6 +626,34 @@
     
   
     Fix: Hypervisor Not Running
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/pictorial-hypervisor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Guide: Hypervisor Not Running
   
 
     
@@ -646,6 +702,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/pictorial-virtual-machine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Guide: Virtual Machine Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../getting_set_up_Windows/fix-wdac-policy/" class="md-nav__link">
         
   
@@ -654,6 +738,34 @@
     
   
     Fix: WDAC Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_set_up_Windows/pictorial-wdac-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Guide: WDAC Policy
   
 
     
@@ -938,6 +1050,62 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../windows-quick-fixes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Fixes — Try These First
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../new-to-powershell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New to PowerShell?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1904,6 +2072,10 @@
 <h1 id="fix-workspace-connection-and-sandbox-errors-windows">Fix: Workspace Connection and Sandbox Errors — Windows</h1>
 <p>You successfully launched Claude Cowork, but during your session the workspace disconnected, threw a network timeout, or crashed with an unexpected file-sharing error. Because Cowork operates inside an isolated local virtual environment on Windows, it relies on persistent system network routing and stable disk images. If a VPN reconnects, Windows updates background settings, or a file handle locks up, the sandbox will lose contact with Claude.</p>
 <p>Find your error below.</p>
+<div class="admonition note">
+<p class="admonition-title">New to PowerShell?</p>
+<p>Some fixes on this page require PowerShell. If you've never used it before, <a href="../new-to-powershell/">start here for a quick, friendly primer</a> before you begin.</p>
+</div>
 <hr />
 <h2 id="which-error-are-you-seeing">Which error are you seeing?</h2>
 <h3 id="the-claude-api-cannot-be-reached-from-claudes-workspace">🔴 "The Claude API cannot be reached from Claude's workspace"</h3>

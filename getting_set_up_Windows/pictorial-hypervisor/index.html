@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://archiecur.github.io/troubleshooting_Cowork/getting_set_up_Windows/fix-wdac-policy/">
+        <link rel="canonical" href="https://archiecur.github.io/troubleshooting_Cowork/getting_set_up_Windows/pictorial-hypervisor/">
       
       
-        <link rel="prev" href="../pictorial-virtual-machine/">
+        <link rel="prev" href="../fix-hypervisor-not-running/">
       
       
-        <link rel="next" href="../pictorial-wdac-policy/">
+        <link rel="next" href="../fix-virtual-machine-platform/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Fix: WDAC Policy - Claude Cowork Troubleshooting Guide</title>
+        <title>Visual Guide: Hypervisor Not Running - Claude Cowork Troubleshooting Guide</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fix-application-control-policy-wdac" class="md-skip">
+        <a href="#fix-hypervisor-not-running" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Fix: WDAC Policy
+              Visual Guide: Hypervisor Not Running
             
           </span>
         </div>
@@ -655,10 +655,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../pictorial-hypervisor/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Guide: Hypervisor Not Running
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -674,6 +701,120 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-check-memory-integrity-core-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 — Check Memory Integrity (Core Isolation)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-check-reputation-based-protection-smart-app-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 — Check Reputation-Based Protection (Smart App Control)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-check-if-virtualization-is-enabled-in-task-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 — Check if Virtualization is Enabled in Task Manager
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3 — Check if Virtualization is Enabled in Task Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-3a-enable-virtualization-in-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3a — Enable Virtualization in BIOS/UEFI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-check-for-antivirus-interference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 — Check for Antivirus Interference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-check-device-encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 — Check Device Encryption
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-check-windows-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 — Check Windows Update
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#still-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Still not working?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -739,37 +880,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Fix: WDAC Policy
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../fix-wdac-policy/" class="md-nav__link">
         
   
   
@@ -785,98 +899,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#is-this-your-personal-computer-or-a-work-computer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Is this your personal computer or a work computer?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Is this your personal computer or a work computer?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#personal-computer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏠 Personal computer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#work-computer-managed-by-an-employer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏢 Work computer (managed by an employer)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#personal-computer-fix" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Personal computer fix
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#work-computer-contact-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Work computer — contact IT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#still-stuck" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Still stuck?
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1696,33 +1718,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#is-this-your-personal-computer-or-a-work-computer" class="md-nav__link">
+  <a href="#step-1-check-memory-integrity-core-isolation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Is this your personal computer or a work computer?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Is this your personal computer or a work computer?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#personal-computer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏠 Personal computer
+        Step 1 — Check Memory Integrity (Core Isolation)
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#work-computer-managed-by-an-employer" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#step-2-check-reputation-based-protection-smart-app-control" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏢 Work computer (managed by an employer)
+        Step 2 — Check Reputation-Based Protection (Smart App Control)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-check-if-virtualization-is-enabled-in-task-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 — Check if Virtualization is Enabled in Task Manager
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3 — Check if Virtualization is Enabled in Task Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-3a-enable-virtualization-in-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3a — Enable Virtualization in BIOS/UEFI
       
     </span>
   </a>
@@ -1735,10 +1768,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#personal-computer-fix" class="md-nav__link">
+  <a href="#step-4-check-for-antivirus-interference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Personal computer fix
+        Step 4 — Check for Antivirus Interference
       
     </span>
   </a>
@@ -1746,10 +1779,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#work-computer-contact-it" class="md-nav__link">
+  <a href="#step-5-check-device-encryption" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Work computer — contact IT
+        Step 5 — Check Device Encryption
       
     </span>
   </a>
@@ -1757,10 +1790,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#still-stuck" class="md-nav__link">
+  <a href="#step-6-check-windows-update" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Still stuck?
+        Step 6 — Check Windows Update
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#still-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Still not working?
       
     </span>
   </a>
@@ -1787,57 +1831,297 @@
   
 
 
-<h1 id="fix-application-control-policy-wdac">Fix: Application Control Policy (WDAC)</h1>
-<p>The Cowork Readiness Checker flagged a warning about an <strong>application control policy</strong> — also called a <strong>WDAC policy</strong>, <strong>AppLocker policy</strong>, or <strong>Windows Defender Application Control policy</strong>.</p>
-<p>This means a security policy on your computer is preventing Cowork from running.</p>
-<p><strong>First, identify which situation applies to you:</strong></p>
-<p>👉 <a href="../pictorial-wdac-policy/">Prefer to follow along with screenshots? See the Visual Guide</a></p>
-<hr />
-<h2 id="is-this-your-personal-computer-or-a-work-computer">Is this your personal computer or a work computer?</h2>
-<h3 id="personal-computer">🏠 Personal computer</h3>
-<p>Application control policies are rare on personal PCs. If you're seeing this warning on a computer you own and manage yourself, it was most likely installed by a third-party security suite (such as certain antivirus or endpoint protection products).</p>
-<p>👉 <a href="#personal-computer-fix">Jump to: Personal computer fix</a></p>
-<h3 id="work-computer-managed-by-an-employer">🏢 Work computer (managed by an employer)</h3>
-<p>This is the most common scenario. Your IT department has applied a security policy that controls which applications are allowed to run. This is not something you can fix yourself — your IT department needs to make an exception for Cowork.</p>
-<p>👉 <a href="#work-computer-contact-it">Jump to: Work computer — contact IT</a></p>
-<hr />
-<h2 id="personal-computer-fix">Personal computer fix</h2>
-<p>If you're on a personal PC and seeing this warning, your security software may have installed an application control policy.</p>
-<p><strong>Try these steps in order:</strong></p>
-<p><strong>1. Check for third-party security software</strong></p>
-<p>Look for any of the following types of software installed on your computer:</p>
+<h1 id="fix-hypervisor-not-running">Fix: Hypervisor Not Running</h1>
+<p>You've already turned on <strong>Virtual Machine Platform</strong> and <strong>Windows Hypervisor Platform</strong> in Windows Features — but the Cowork Readiness Checker is still showing errors like:</p>
 <ul>
-<li>Endpoint protection or EDR software (examples: CrowdStrike Falcon, Carbon Black, Cylance, SentinelOne)</li>
-<li>Enterprise antivirus suites (examples: Symantec Endpoint Protection, McAfee Endpoint Security)</li>
-<li>Application whitelisting tools</li>
+<li><em>"hypervisor not running"</em></li>
+<li><em>"missing vmcompute / HNS / vfpext"</em></li>
+<li><em>"WDAC policy present"</em></li>
 </ul>
+<p>This means the virtual machine feature is turned on, but something else on your computer is blocking it from starting. There are a few possible causes.</p>
+<p><strong>Work through the steps below in order.</strong> After each step, restart your computer and run the Cowork Readiness Checker again. Stop as soon as the errors are gone — you don't need to do every step.</p>
+<hr />
+<h2 id="step-1-check-memory-integrity-core-isolation">Step 1 — Check Memory Integrity (Core Isolation)</h2>
+<p>This is the <strong>#1 cause</strong> of "hypervisor not running" on personal PCs. Memory Integrity is a Windows security feature that, when turned on, can prevent the virtualization services Cowork needs from starting.</p>
+<p><strong>1. Open the Start menu</strong></p>
+<p>Type <code>Windows Security</code> and open it.  </p>
+<p><img alt="Windows Security" src="../../assets/hypervisor_not_running/windows_security.png" />  </p>
+<p><strong>2. Go to Device Security</strong>  </p>
+<p><img alt="Device Security" src="../../assets/hypervisor_not_running/device_security.png" />  </p>
+<p>Select <strong>Device Security</strong> → click <strong>Core isolation details</strong>.  </p>
+<p><img alt="Core Isolation" src="../../assets/hypervisor_not_running/core_isolation.png" />  </p>
+<p><strong>3. Check Memory Integrity</strong>  </p>
+<p><img alt="Memory Integrity" src="../../assets/hypervisor_not_running/memory_integrity.png" />  </p>
+<ul>
+<li>If Memory Integrity is <strong>ON → turn it OFF</strong></li>
+<li>If Memory Integrity is <strong>OFF → leave it off and skip to Step 2</strong></li>
+</ul>
+<p><strong>4. Restart your computer</strong>  </p>
+<p><img alt="Restart" src="../../assets/fix_access_denied/restart.png" /> </p>
+<p><strong>5. Run the Cowork Readiness Checker again</strong></p>
+<p>✅ <strong>Errors gone? You're done — ready to install Cowork!</strong></p>
+<p>❌ <strong>Still seeing errors? Continue to Step 2.</strong></p>
+<hr />
+<h2 id="step-2-check-reputation-based-protection-smart-app-control">Step 2 — Check Reputation-Based Protection (Smart App Control)</h2>
+<p>Windows security settings can sometimes act as a "bouncer" that blocks Cowork's virtualization services from being approved to run. <br />
+This step temporarily relaxes those restrictions so you can test whether they are the cause.</p>
+<p><strong>1. Open the Start menu</strong></p>
+<p>Type <code>App &amp; browser control</code> and open it.  </p>
+<p><img alt="App and Browser Control" src="../../assets/hypervisor_not_running/app_browser_control.png" /> </p>
+<p><strong>2. Go to Reputation-based protection settings</strong> </p>
+<p>Click <strong>Reputation-based protection settings</strong>.  </p>
+<p><img alt="Reputation Protection" src="../../assets/hypervisor_not_running/reputation.png" /> </p>
+<p><strong>3. Temporarily turn OFF these three settings:</strong></p>
+<ul>
+<li><strong>Check apps and files</strong>  </li>
+</ul>
+<p><img alt="Check apps and files" src="../../assets/hypervisor_not_running/check_apps_and_files.png" /> </p>
+<ul>
+<li><strong>SmartScreen for Microsoft Edge</strong>  </li>
+</ul>
+<p><img alt="SmartScreen" src="../../assets/hypervisor_not_running/SmartScreen.png" /> </p>
+<ul>
+<li><strong>Potentially unwanted app blocking</strong>  </li>
+</ul>
+<p><img alt="Potentially Unwanted" src="../../assets/hypervisor_not_running/potentially_unwanted.png" /> </p>
 <div class="admonition note">
-<p class="admonition-title">How to check what's installed</p>
-<p>Open the Start menu → type <code>Add or remove programs</code> → scroll through the list and look for anything matching the types above.</p>
+<p class="admonition-title">You can turn these back on later</p>
+<p>These are temporary changes for testing. Once Cowork is running, you can turn them back on.</p>
 </div>
-<p><strong>2. If you find security software you don't recognize or didn't intentionally install</strong></p>
-<p>This software may have come pre-installed on your PC by a previous employer, or bundled with another program. Consider:</p>
+<p><strong>If you see a message saying these are controlled by Smart App Control and can't be changed:</strong></p>
 <ul>
-<li>Uninstalling it if you no longer need it</li>
-<li>Contacting the software vendor's support to ask how to allow a specific application to run</li>
+<li>Go back one screen  </li>
 </ul>
+<p><img alt="Go back" src="../../assets/hypervisor_not_running/go_back.png" /></p>
+<p>Select <strong>Smart App Control settings</strong></p>
+<p><img alt="SmartApp Control" src="../../assets/hypervisor_not_running/smart_app_settings.png" /> </p>
+<ul>
+<li>Click the radio button to turn Smart App Control <strong>Off</strong>  </li>
+</ul>
+<p><img alt="SmartApp Off" src="../../assets/hypervisor_not_running/smart_app_off.png" /> </p>
+<ul>
+<li>
+<p>Click <strong>Yes</strong> in the pop-up that appears </p>
+</li>
+<li>
+<p>Then return to <strong>Reputation-based protection settings</strong> and <strong>turn off the three items listed in Step 2- #3 above</strong>  </p>
+</li>
+</ul>
+<p><strong>4. Check Exploit Protection</strong></p>
+<p>While still in App &amp; browser control:</p>
+<ul>
+<li>Go back one screen</li>
+</ul>
+<p><img alt="Go Back" src="../assets/hypervisor_not_running/Go Back.png" /> </p>
+<ul>
+<li>Scroll down to <strong>Exploit protection</strong> → click <strong>Exploit protection settings</strong> </li>
+</ul>
+<p><img alt="Exploitation Protection" src="../../assets/hypervisor_not_running/exploit_protection.png" /> </p>
+<ul>
+<li>Select the <strong>System settings</strong> tab  </li>
+</ul>
+<p><img alt="Exploitation system settings" src="../../assets/hypervisor_not_running/system_settings.png" /> </p>
+<ul>
+<li>Scroll to <strong>Control flow guard (CFG)</strong>  </li>
+</ul>
+<p><img alt="Control Flow Guard" src="../../assets/hypervisor_not_running/control_flow_guard.png" /> </p>
+<ul>
+<li>Make sure it is set to <strong>Use default (On)</strong>  </li>
+</ul>
+<p><strong>5. Restart your computer</strong>  </p>
+<p><img alt="Restart" src="../../assets/fix_access_denied/restart.png" /> </p>
+<p><strong>6. Run the Cowork Readiness Checker again</strong></p>
+<p>✅ <strong>Errors gone? You're done — ready to install Cowork!</strong></p>
+<p>❌ <strong>Still seeing errors? Continue to Step 3.</strong></p>
+<hr />
+<h2 id="step-3-check-if-virtualization-is-enabled-in-task-manager">Step 3 — Check if Virtualization is Enabled in Task Manager</h2>
+<p>Before going into your computer's hardware settings, this quick check tells you whether virtualization is switched off at the hardware level.</p>
+<p><strong>1. Right-click on an empty area of your taskbar</strong></p>
+<p>Select <strong>Task Manager</strong>.  </p>
+<p><img alt="Task Manager" src="../../assets/hypervisor_not_running/task_manager.png" /> </p>
+<p><strong>2. Click Performance → then CPU</strong> </p>
+<p><img alt="Performance" src="../../assets/hypervisor_not_running/performance.png" /> </p>
+<p><img alt="CPU" src="../../assets/hypervisor_not_running/cpu.png" /> </p>
+<p>At the bottom of the screen, look for <strong>Virtualization</strong>.  </p>
+<p><img alt="Virtualization" src="../../assets/hypervisor_not_running/virtualization.png" /> </p>
+<p>You will see one of these:</p>
+<table>
+<thead>
+<tr>
+<th>What it says</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Virtualization: Enabled</strong></td>
+<td>Your hardware is fine — skip to Step 4 (antivirus check)</td>
+</tr>
+<tr>
+<td><strong>Virtualization: Disabled</strong></td>
+<td>You need to enable it in BIOS — continue to Step 3a below</td>
+</tr>
+<tr>
+<td><strong>Virtualization: Not supported</strong></td>
+<td>Your processor does not support virtualization. This is rare on modern PCs.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="step-3a-enable-virtualization-in-biosuefi">Step 3a — Enable Virtualization in BIOS/UEFI</h3>
+<div class="admonition warning">
+<p class="admonition-title">Read this before you start</p>
+<p>The BIOS controls low-level hardware settings. You should only change the virtualization option — do not adjust anything else. If your PC is less than 5 years old, virtualization is likely already enabled and you can skip this step.</p>
+</div>
+<p><strong>How to get into BIOS/UEFI:</strong></p>
+<p><strong>1. Open Settings</strong></p>
+<p>Type <code>Settings</code> in the search bar and click <strong>Open</strong>  </p>
+<p><img alt="Settings" src="../../assets/hypervisor_not_running/Settings_open.png" /> </p>
+<p><strong>2. Go to Recovery</strong></p>
+<p>Scroll to <strong>Recovery</strong> and click on it.  </p>
+<p><img alt="Recovery" src="../../assets/hypervisor_not_running/recovery.png" /> </p>
+<p><strong>3. Click "Restart now" under Advanced startup</strong>  </p>
+<p><img alt="Restart Now" src="../../assets/hypervisor_not_running/advanced_startup.png" /> </p>
+<p>Your computer will restart into a menu screen. </p>
+<p><strong>4. In the menu, select:</strong>  </p>
+<p>Computer manufactures have menu screens with different appearances. You will look for these specific items in the menu- </p>
+<ul>
+<li><strong>Troubleshoot</strong></li>
+<li><strong>Advanced options</strong></li>
+<li><strong>UEFI Firmware Settings</strong></li>
+<li><strong>Restart</strong></li>
+</ul>
+<p><strong>What to look for once you're in BIOS/UEFI:</strong></p>
+<p>Look for a setting with one of these names — they all mean the same thing:</p>
+<ul>
+<li>Intel Virtualization Technology</li>
+<li>Intel VT-x</li>
+<li>AMD-V</li>
+<li>SVM Mode</li>
+<li>Virtualization Support</li>
+<li>Virtual Machine Support</li>
+</ul>
+<p><strong>What to do:</strong></p>
+<ul>
+<li>Set it to <strong>Enabled</strong></li>
+<li>Save and exit — usually by pressing <strong>F10</strong>
+There may be on screen instruction showing how to exit.</li>
+</ul>
+<p><strong>What NOT to touch:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Leave it alone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Secure Boot</td>
+<td>⬜ Do not change</td>
+</tr>
+<tr>
+<td>TPM</td>
+<td>⬜ Do not change</td>
+</tr>
+<tr>
+<td>Boot order</td>
+<td>⬜ Do not change</td>
+</tr>
+<tr>
+<td>Overclocking</td>
+<td>⬜ Do not change</td>
+</tr>
+<tr>
+<td>C-states</td>
+<td>⬜ Do not change</td>
+</tr>
+<tr>
+<td>Anything mentioning voltage or frequency</td>
+<td>⬜ Do not change</td>
+</tr>
+</tbody>
+</table>
+<p><strong>After saving and restarting:</strong></p>
+<p>Open Task Manager → Performance → CPU and confirm it now says <strong>Virtualization: Enabled</strong>.</p>
+<p>Then run the <strong>Cowork Readiness Checker</strong> again.</p>
+<p>✅ <strong>Errors gone? You're done — ready to install Cowork!</strong></p>
+<p>❌ <strong>Still seeing errors? Continue to Step 4.</strong></p>
+<hr />
+<h2 id="step-4-check-for-antivirus-interference">Step 4 — Check for Antivirus Interference</h2>
+<p>Some antivirus programs block the hypervisor from starting in order to "protect" your system. This step temporarily disables that protection so you can test whether your antivirus is the cause.</p>
+<p><strong>1. Open the Start menu</strong></p>
+<p>Type <code>Windows Security</code> and open it.  </p>
+<p><img alt="Windows Security" src="../../assets/hypervisor_not_running/windows_security.png" /> </p>
+<p><strong>2. Go to Virus &amp; threat protection</strong>  </p>
+<p><img alt="Virus and Threat protection" src="../../assets/hypervisor_not_running/Virus_threat.png" /> </p>
+<p>Select <strong>Virus &amp; threat protection</strong> → scroll to <strong>Virus &amp; threat protection settings</strong> → click <strong>Manage settings</strong>.  </p>
+<p><img alt="Virus and Threat protection Settings" src="../../assets/hypervisor_not_running/virus_threat_settings.png" /> </p>
+<p><strong>3. Temporarily turn OFF:</strong></p>
+<ul>
+<li><strong>Real-time protection</strong>  </li>
+</ul>
+<p><img alt="Realtime protection" src="../../assets/hypervisor_not_running/Realtime_protection.png" /> </p>
+<ul>
+<li><strong>Tamper protection</strong> (if present)  </li>
+</ul>
+<p><img alt="Tamper Protection" src="../../assets/hypervisor_not_running/Tamper_protection.png" /> </p>
+<div class="admonition note">
+<p class="admonition-title">You can turn these back on after testing</p>
+<p>If turning these off fixes the problem, you'll want to turn them back on and then look into your antivirus settings for a way to whitelist Cowork specifically.</p>
+</div>
+<p><strong>4. Restart your computer</strong>  </p>
+<p><img alt="Restart" src="../../assets/fix_access_denied/restart.png" /> </p>
+<p><strong>5. Run the Cowork Readiness Checker again</strong></p>
+<p>✅ <strong>Errors gone? You're done — ready to install Cowork!</strong></p>
+<p>❌ <strong>Still seeing errors? Continue to Step 5.</strong></p>
+<hr />
+<h2 id="step-5-check-device-encryption">Step 5 — Check Device Encryption</h2>
+<p>Device Encryption can sometimes reserve the hypervisor in a way that prevents Cowork from using it.  </p>
+<p>Claude Cowork runs a small virtual machine. On some Windows systems, Device Encryption or BitLocker can reserve the Windows hypervisor, preventing Cowork’s VM from starting.  </p>
+<p>This issue is documented across multiple Cowork troubleshooting reports and aligns with Microsoft’s own guidance about BitLocker’s interaction with Hyper V.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Windows 11 Home users: If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally. Windows 11 Home is not a supported configuration for Cowork. This has been reported as being corrected in a Readiness Checker update.</p>
+</div>
+<p>Windows 10 users: Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.</p>
+<p><strong>1. Open Settings</strong>  </p>
+<p><strong>2. Go to Privacy &amp; security</strong>   </p>
+<p><img alt="Privacy and Security" src="../../assets/hypervisor_not_running/privacy_security.png" /> </p>
+<ul>
+<li>Select <strong>Device Security</strong>  </li>
+</ul>
+<p><img alt="Device Security" src="../../assets/hypervisor_not_running/device_securityA.png" /> </p>
+<ul>
+<li>
+<p>If you see <strong>Device Encryption, turn it OFF and restart</strong>. or  </p>
+</li>
+<li>
+<p>If you see <strong>BitLocker Drive Encryption, suspend or turn it OFF and restart</strong></p>
+</li>
+</ul>
+<p><img alt="BitLocker Off" src="../../assets/hypervisor_not_running/bit_locker_off.png" /> </p>
 <p><strong>3. Run the Cowork Readiness Checker again</strong></p>
-<p>✅ <strong>Warning gone? You're done — ready to install Cowork!</strong></p>
-<p>❌ <strong>Still seeing the warning?</strong></p>
-<p>This type of policy can be difficult to locate and remove without technical assistance. If you're not comfortable investigating further, consider reaching out to a trusted technical contact or IT professional for help.</p>
+<p>✅ <strong>Errors gone? You're done — ready to install Cowork!</strong></p>
+<p>❌ <strong>Still seeing errors? Continue to Step 6.</strong></p>
 <hr />
-<h2 id="work-computer-contact-it">Work computer — contact IT</h2>
-<p>If your computer is managed by your employer, your IT department needs to create an exception that allows Cowork to run. This is a standard request and your IT team will know what to do.</p>
-<p>A pre-written email template is ready for you — it includes the technical details your IT department will need.</p>
-<p>👉 <a href="../windows-it-email-templates/#application-control-policy-exception">IT email template: Application control policy exception</a></p>
-<div class="admonition note">
-<p class="admonition-title">What to expect</p>
-<p>Response times vary by organization. If your company has a helpdesk ticketing system, consider submitting a ticket as well as sending the email so your request is tracked.</p>
-</div>
+<h2 id="step-6-check-windows-update">Step 6 — Check Windows Update</h2>
+<p>In rare cases, the hypervisor fails to start because of a missing Windows update.</p>
+<p><strong>1. Open Settings → Windows Update</strong>  </p>
+<p><img alt="Windows Update" src="../../assets/hypervisor_not_running/windows_update.png" /> </p>
+<p><strong>2. Click Check for updates</strong>  </p>
+<p><img alt="Check for updates" src="../../assets/hypervisor_not_running/check_for_updates.png" /> </p>
+<p><strong>3. Install all available updates</strong></p>
+<p><strong>4. Restart your computer</strong>  </p>
+<p><img alt="Restart" src="../../assets/fix_access_denied/restart.png" /> </p>
+<p><strong>5. Run the Cowork Readiness Checker again</strong></p>
+<p>✅ <strong>Errors gone? You're done — ready to install Cowork!</strong></p>
 <hr />
-<h2 id="still-stuck">Still stuck?</h2>
-<p>If you've tried the steps above and the warning is still there, the policy may be enforced at a level that requires direct IT intervention regardless of which computer you're using.</p>
-<p>👉 <a href="../windows-checker-errors/">Back to Windows Checker Errors hub</a>  </p>
+<h2 id="still-not-working">Still not working?</h2>
+<p>If you've worked through all six steps and the errors are still there, the issue may be related to an application control policy on your computer. This is uncommon on personal PCs but can happen if you have certain security software installed.</p>
+<p>👉 <a href="../fix-wdac-policy/">Fix: Application control policy (WDAC)</a></p>
+<p>If your computer is managed by your employer, your IT department will need to assist.</p>
+<p>👉 <a href="../windows-it-email-templates/">IT email templates for Cowork virtualization errors</a>  </p>
 <p><em>ArchieCur created in collaboration with Claude Sonnet 4.6 (Anthropic) · v1.0.0 · June 2026</em></p>
 
 
