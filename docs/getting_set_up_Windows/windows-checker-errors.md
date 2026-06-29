@@ -76,4 +76,4 @@ If your computer is managed by your employer, you may need to send your IT depar
 !!! note "Not sure which error you have?"
     Take a screenshot of your readiness checker results and compare it to the descriptions above. If you're still unsure, the [Fix: Hypervisor not running](fix-hypervisor-not-running.md) page covers the most common layered causes and walks you through them step by step.  
 
-    *ArchieCur created in collaboration with Claude Sonnet 4.6 (Anthropic) · v1.0.1 · June 2026*
+*ArchieCur created in collaboration with Claude Sonnet 4.6 (Anthropic) · v1.0.1 · June 2026*
