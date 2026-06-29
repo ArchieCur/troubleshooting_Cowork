@@ -125,5 +125,6 @@ You can close PowerShell when the fix is complete.
 PowerShell will not run anything until you press **Enter**, so you can safely paste commands without worrying about accidental execution.  
 All commands in this guide are designed for personal, unmanaged Windows devices and will not harm your computer.
 
+---
 
 *New to PowerShell- Claude Cowork Troubleshooting Guide Created by ArchieCur in collaboration with Copilot (Microsoft) version 1.0.0 June 2026*
