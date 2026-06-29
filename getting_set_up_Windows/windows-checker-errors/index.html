@@ -1667,20 +1667,25 @@
 <p>This warning also appears on employer-managed computers. It means Windows blocked the checker from reading a security setting.</p>
 <p>👉 <a href="../fix-access-denied/">Fix: VM service logon / Access Denied</a></p>
 <hr />
+<p><strong>Legacy errors- resolved</strong></p>
+<p><strong>Legacy Issue: “yukonSilver not supported”</strong>
+Early versions of Claude Cowork used an outdated platform‑detection system that misidentified some Windows devices as “yukonSilver,” an internal codename for Windows ARM64.</p>
+<p>This caused false “unsupported platform” errors on fully supported Windows 10/11 Pro x64 systems.  </p>
+<p><strong>Legacy Issue: Windows Home supported</strong>  </p>
+<p><strong>Status:</strong> This issue has been fully resolved by an update to the readiness checker.  </p>
+<hr />
 <h2 id="need-to-contact-it">Need to contact IT?</h2>
 <p>If your computer is managed by your employer, you may need to send your IT department a request. Pre-written email templates are available here:</p>
 <p>👉 <a href="../windows-it-email-templates/">IT email templates for Cowork virtualization errors</a>  </p>
 <hr />
 <h2 id="known-windows-systems-that-wont-work-with-cowork">Known Windows systems that won't work with Cowork</h2>
-<pre><code>**Windows 11 Home users:** If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally. Windows 11 Home is not a supported configuration for Cowork.
-
-**Windows 10 users:** Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.
-</code></pre>
+<p><strong>Windows 11 Home users:</strong> If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally. Windows 11 Home is not a supported configuration for Cowork.  </p>
+<p><strong>Windows 10 users:</strong> Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.</p>
 <hr />
 <div class="admonition note">
 <p class="admonition-title">Not sure which error you have?</p>
 <p>Take a screenshot of your readiness checker results and compare it to the descriptions above. If you're still unsure, the <a href="../fix-hypervisor-not-running/">Fix: Hypervisor not running</a> page covers the most common layered causes and walks you through them step by step.  </p>
-<p><em>ArchieCur created in collaboration with Claude Sonnet 4.6 (Anthropic) · v1.0.0 · June 2026</em></p>
+<p><em>ArchieCur created in collaboration with Claude Sonnet 4.6 (Anthropic) · v1.0.1 · June 2026</em></p>
 </div>
 
 
