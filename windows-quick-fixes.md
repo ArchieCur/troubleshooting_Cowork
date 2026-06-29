@@ -134,11 +134,11 @@ Launching Cowork twice can cause mount failures.
 **Fix:**  
 Quit all Cowork windows, then relaunch a single instance.  
 
----
-*Windows Quick Fixes- Claude Cowork Troubleshooting Guide Created by ArchieCur in collaboration with Copilot (Microsoft) version 1.0.0 June 2026*
-
 **Why it helps:**  
 Prevents duplicate VM initialization attempts.
+
+---
+*Windows Quick Fixes- Claude Cowork Troubleshooting Guide Created by ArchieCur in collaboration with Copilot (Microsoft) version 1.0.0 June 2026*
 
 ---
 
