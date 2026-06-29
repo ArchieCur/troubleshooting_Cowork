@@ -59,7 +59,7 @@ Do **not** check any of the following — they can cause problems and Cowork doe
 
 **5. Click OK**  
 
-[Click OK](../assets/virtual_machine/OK.png)
+[Click OK](../assets/virtual_machine/ok.png)
 
 Windows will install the features. This may take a few minutes — let it finish.
 
@@ -67,7 +67,7 @@ Windows will install the features. This may take a few minutes — let it finish
 
 - When prompted, restart. This step is required — the features won't activate until you do.
 
-[Click OK](../assets/virtual_machine/Restart.png)
+[Restart](../assets/virtual_machine/restart.png)
 
 **7. Run the Cowork Readiness Checker again**
 
