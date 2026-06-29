@@ -81,7 +81,7 @@ Click **Reputation-based protection settings**.
 
 ![Potentially Unwanted](../assets/hypervisor_not_running/potentially_unwanted.png) 
 
-!!! note 
+!!! note
     **You can turn these back on later**
     These are temporary changes for testing. Once Cowork is running, you can turn them back on.
 
