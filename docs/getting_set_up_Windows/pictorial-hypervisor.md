@@ -81,7 +81,8 @@ Click **Reputation-based protection settings**.
 
 ![Potentially Unwanted](../assets/hypervisor_not_running/potentially_unwanted.png) 
 
-!!! note "You can turn these back on later"
+!!! note 
+    **You can turn these back on later**
     These are temporary changes for testing. Once Cowork is running, you can turn them back on.
 
 **If you see a message saying these are controlled by Smart App Control and can't be changed:**
@@ -269,7 +270,8 @@ Select **Virus & threat protection** → scroll to **Virus & threat protection s
 
 ![Tamper Protection](../assets/hypervisor_not_running/Tamper_protection.png) 
 
-!!! note "You can turn these back on after testing"
+!!! note 
+    **You can turn these back on after testing**
     If turning these off fixes the problem, you'll want to turn them back on and then look into your antivirus settings for a way to whitelist Cowork specifically.
 
 **4. Restart your computer**  
@@ -292,9 +294,13 @@ Claude Cowork runs a small virtual machine. On some Windows systems, Device Encr
 
 This issue is documented across multiple Cowork troubleshooting reports and aligns with Microsoft’s own guidance about BitLocker’s interaction with Hyper V.
 
-!!! Note      Windows 11 Home users: If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally. Windows 11 Home is not a supported configuration for Cowork. This has been reported as being corrected in a Readiness Checker update.
+!!! note
+    Windows 11 Home users: If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally.  
+    Windows 11 Home is not a supported configuration for Cowork. This has been reported as being corrected in a Readiness Checker update.
  
-!!! Note      Windows 10 users: Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.
+!!! note
+    Windows 10 users: Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. 
+    If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.
 
 **1. Open Settings**  
 
