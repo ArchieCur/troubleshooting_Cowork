@@ -2080,14 +2080,8 @@ There may be on screen instruction showing how to exit.</li>
 <p>Device Encryption can sometimes reserve the hypervisor in a way that prevents Cowork from using it.  </p>
 <p>Claude Cowork runs a small virtual machine. On some Windows systems, Device Encryption or BitLocker can reserve the Windows hypervisor, preventing Cowork’s VM from starting.  </p>
 <p>This issue is documented across multiple Cowork troubleshooting reports and aligns with Microsoft’s own guidance about BitLocker’s interaction with Hyper V.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Windows 11 Home users: If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally. Windows 11 Home is not a supported configuration for Cowork. This has been reported as being corrected in a Readiness Checker update.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Windows 10 users: Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.</p>
-</div>
+<p>!!! Note      Windows 11 Home users: If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally. Windows 11 Home is not a supported configuration for Cowork. This has been reported as being corrected in a Readiness Checker update.</p>
+<p>!!! Note      Windows 10 users: Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.</p>
 <p><strong>1. Open Settings</strong>  </p>
 <p><strong>2. Go to Privacy &amp; security</strong>   </p>
 <p><img alt="Privacy and Security" src="../../assets/hypervisor_not_running/privacy_security.png" /> </p>
