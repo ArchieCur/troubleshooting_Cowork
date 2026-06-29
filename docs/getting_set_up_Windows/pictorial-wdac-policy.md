@@ -38,7 +38,8 @@ Look for any of the following types of software installed on your computer:
 - Enterprise antivirus suites (examples: Symantec Endpoint Protection, McAfee Endpoint Security)
 - Application whitelisting tools
 
-!!! note "How to check what's installed"  
+!!! note
+    **How to check what's installed**  
 
 - Open the Start menu 
 
