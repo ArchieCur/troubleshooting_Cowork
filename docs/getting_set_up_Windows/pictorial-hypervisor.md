@@ -88,7 +88,7 @@ Click **Reputation-based protection settings**.
 
 - Go back one screen  
 
-![Go back](../assets/hypervisor_not_running/Go Back.png) 
+![Go back](../assets/hypervisor_not_running/go_back.png)
 
 Select **Smart App Control settings**
 

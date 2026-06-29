@@ -4,6 +4,9 @@ You set up a scheduled task in Cowork, but it failed to create, silently stopped
 
 Find your error below.
 
+!!! note "New to PowerShell?"
+    Some fixes on this page require PowerShell. If you've never used it before, [start here for a quick, friendly primer](new-to-powershell.md) before you begin.
+
 ---
 
 ## Which error are you seeing?

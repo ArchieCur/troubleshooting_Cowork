@@ -4,6 +4,8 @@ The Cowork Readiness Checker flagged a warning about a **"VM service logon right
 
 This means Windows blocked the checker from reading a security setting that Cowork needs. This is almost always seen on computers managed by an employer.
 
+👉 [Prefer to follow along with screenshots? See the Visual Guide](pictorial-access-denied.md)
+
 ---
 
 ## Is this your personal computer or a work computer?

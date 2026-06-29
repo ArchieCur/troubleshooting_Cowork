@@ -4,6 +4,8 @@ If you saw a red X next to **"Hardware Virtualization"** or **"Virtual Machine P
 
 Think of it like a power switch that just needs to be flipped on.
 
+👉 [Prefer to follow along with screenshots? See the Visual Guide](pictorial-virtual-machine.md)
+
 ---
 
 ## What you'll do

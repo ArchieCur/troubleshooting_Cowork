@@ -44,16 +44,18 @@ This warning also appears on employer-managed computers. It means Windows blocke
 
 ---  
 
-**Legacy errors- resolved**
+## Legacy Errors — Resolved
 
 **Legacy Issue: “yukonSilver not supported”**
 Early versions of Claude Cowork used an outdated platform‑detection system that misidentified some Windows devices as “yukonSilver,” an internal codename for Windows ARM64.
 
-This caused false “unsupported platform” errors on fully supported Windows 10/11 Pro x64 systems.  
+This caused false “unsupported platform” errors on fully supported Windows 10/11 Pro x64 systems.
 
-**Legacy Issue: Windows Home supported**  
+**Status:** This issue has been fully resolved by an update to the readiness checker.
 
-**Status:** This issue has been fully resolved by an update to the readiness checker.  
+**Legacy Issue: Windows Home not supported — now confirmed**
+
+**Status:** This issue has been fully resolved by an update to the readiness checker.
 
 ---  
 

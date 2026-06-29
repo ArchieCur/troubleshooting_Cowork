@@ -4,6 +4,9 @@ You launched a Cowork session, but your connected tools are missing, the MCP reg
 
 Find your error below.
 
+!!! note "New to PowerShell?"
+    Some fixes on this page require PowerShell. If you've never used it before, [start here for a quick, friendly primer](new-to-powershell.md) before you begin.
+
 ---
 
 ## Which error are you seeing?

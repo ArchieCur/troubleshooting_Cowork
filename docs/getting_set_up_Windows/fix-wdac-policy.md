@@ -6,6 +6,8 @@ This means a security policy on your computer is preventing Cowork from running.
 
 **First, identify which situation applies to you:**
 
+👉 [Prefer to follow along with screenshots? See the Visual Guide](pictorial-wdac-policy.md)
+
 ---
 
 ## Is this your personal computer or a work computer?

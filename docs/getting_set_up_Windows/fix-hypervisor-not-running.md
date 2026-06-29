@@ -8,6 +8,8 @@ You've already turned on **Virtual Machine Platform** and **Windows Hypervisor P
 
 This means the virtual machine feature is turned on, but something else on your computer is blocking it from starting. There are a few possible causes.
 
+👉 [Prefer to follow along with screenshots? See the Visual Guide](pictorial-hypervisor.md)
+
 **Work through the steps below in order.** After each step, restart your computer and run the Cowork Readiness Checker again. Stop as soon as the errors are gone — you don't need to do every step.
 
 ---

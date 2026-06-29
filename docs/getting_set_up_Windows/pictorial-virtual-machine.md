@@ -29,7 +29,7 @@ This takes about 5 minutes, and Windows will walk you through most of it.
 
 - Type: `Windows Features` and press **Enter**.  
 
-![Windows Features](../assets/virtual_machine/start.png)
+![Windows Features](../assets/virtual_machine/windows_features.png)
 
 - A window called **"Turn Windows features on or off"** will open.
 
