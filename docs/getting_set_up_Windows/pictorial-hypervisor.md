@@ -109,7 +109,7 @@ While still in App & browser control:
 
 - Go back one screen
 
-![Go Back](../assets/hypervisor_not_running/Go Back.png) 
+![Go back](../assets/hypervisor_not_running/go_back.png)
 
 - Scroll down to **Exploit protection** → click **Exploit protection settings** 
 
