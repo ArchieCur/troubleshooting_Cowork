@@ -192,7 +192,7 @@ Scroll to **Recovery** and click on it.
 
 Your computer will restart into a menu screen. 
 
-**4. In the menu, select:**  
+**4. In the menu select:**  
 
 Computer manufactures have menu screens with different appearances. You will look for these specific items in the menu- 
 
