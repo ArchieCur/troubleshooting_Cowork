@@ -42,7 +42,20 @@ This warning also appears on employer-managed computers. It means Windows blocke
 
 👉 [Fix: VM service logon / Access Denied](fix-access-denied.md)
 
----
+---  
+
+**Legacy errors- resolved**
+
+**Legacy Issue: “yukonSilver not supported”**
+Early versions of Claude Cowork used an outdated platform‑detection system that misidentified some Windows devices as “yukonSilver,” an internal codename for Windows ARM64.
+
+This caused false “unsupported platform” errors on fully supported Windows 10/11 Pro x64 systems.  
+
+**Legacy Issue: Windows Home supported**  
+
+**Status:** This issue has been fully resolved by an update to the readiness checker.  
+
+---  
 
 ## Need to contact IT?
 
@@ -54,13 +67,13 @@ If your computer is managed by your employer, you may need to send your IT depar
 
 ## Known Windows systems that won't work with Cowork
 
-    **Windows 11 Home users:** If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally. Windows 11 Home is not a supported configuration for Cowork.  
+**Windows 11 Home users:** If you are on Windows 11 Home, the Readiness Checker may have incorrectly reported that your system is ready — this is a known issue caused by the way Windows reports its version internally. Windows 11 Home is not a supported configuration for Cowork.  
 
-    **Windows 10 users:** Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.
+**Windows 10 users:** Cowork requires Windows 10 build 17763 or higher (released October 2018). To check your build, go to Settings → System → About and look at the OS Build number. If your build is lower than 17763, Windows Update may be able to bring you current — but if your hardware is too old to upgrade, Cowork will not be supported.
 
 ---
 
 !!! note "Not sure which error you have?"
     Take a screenshot of your readiness checker results and compare it to the descriptions above. If you're still unsure, the [Fix: Hypervisor not running](fix-hypervisor-not-running.md) page covers the most common layered causes and walks you through them step by step.  
 
-    *ArchieCur created in collaboration with Claude Sonnet 4.6 (Anthropic) · v1.0.0 · June 2026*
+    *ArchieCur created in collaboration with Claude Sonnet 4.6 (Anthropic) · v1.0.1 · June 2026*
