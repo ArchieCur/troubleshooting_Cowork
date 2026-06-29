@@ -63,7 +63,8 @@ You’ll need to add the two specific accounts manually.
 
 **If one or both are missing:** continue to Step 2.
 
-**2. Adding the missing `NT SERVICE\vmcompute` and or `NT SERVICE\hns`**  
+**2. Adding the missing `NT SERVICE\vmcompute` and or `NT SERVICE\hns`** 
+
 - In the Log on as a service window, **click** Add User or Group…  
 
 ![Add Users or Groups](../assets/fix_access_denied/add_users_or_group.png)
